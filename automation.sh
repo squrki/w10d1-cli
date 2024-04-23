@@ -5,22 +5,14 @@
 # Task Description: [Describe the repetitive task that needs to be automated]
 
 # Step 1: Identify the repetitive task to be automated
-# clean and organize ~/Downloads folder
+
+# clean and organize ~/Downloads directory
 
 # [Describe the task that you've identified for automation]
-# Move contents to folder named by the date of the download
+
+# Move contents to directory named by the date of the download
  
 # Step 2: Design and implement the automation script
-
-# Placeholder for Bash script implementation
-
- 
-
-# Step 3: Test the automation script
-
- 
-
-# Placeholder for testing instructions
 
 current_datetime=$(date +"%Y-%m-%d")
 
@@ -33,14 +25,22 @@ for f in ~/Downloads/*; do
   fi
 done
 
+# Step 3: Test the automation script
+
+ 
+# touch [random file name] multiple times
+# run automation.sh
+# check ~/Downloads for new directory ./[today's date], and see if the touched files have been moved there.
+
+
+
 # Step 4: Document the development process
 
  
 
 # Placeholder for documentation
 
-# [Replace this comment with documentation of your script development process]
-
+# Automation script creates a new directory in the ~/Downloads directory named with today's date, and moves everything in the ~/Downloads directory that isn't a directory to the new directory.
  
 
 # End of script
