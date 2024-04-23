@@ -26,9 +26,10 @@ current_datetime=$(date +"%Y-%m-%d")
 
 mkdir ~/Downloads/$current_datetime 
 
-for f in /Downloads/*; do
-  if [ ! -d f ]; then
-  mv f /Downloads/$current_datetime/
+for f in ~/Downloads/*; do
+  echo $f
+  if [ ! -d $f ]; then
+    mv $f ~/Downloads/$current_datetime/
   fi
 done
 
