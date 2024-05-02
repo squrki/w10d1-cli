@@ -1,7 +1,5 @@
 # Automation Task
 
- 
-
 # Task Description: [Describe the repetitive task that needs to be automated]
 
 # Step 1: Identify the repetitive task to be automated
@@ -14,7 +12,7 @@
  
 # Step 2: Design and implement the automation script
 
-current_datetime=$(date +"%Y-%m-%d")
+```current_datetime=$(date +"%Y-%m-%d")
 
 mkdir ~/Downloads/$current_datetime 
 
@@ -23,24 +21,11 @@ for f in ~/Downloads/*; do
   if [ -f $f ]; then
     mv $f ~/Downloads/$current_datetime/
   fi
-done
+done```
 
 # Step 3: Test the automation script
-
  
 # touch [random file name] multiple times
 # run automation.sh
 # check ~/Downloads for new directory ./[today's date], and see if the touched files have been moved there.
 
-
-
-# Step 4: Document the development process
-
- 
-
-# Placeholder for documentation
-
-# Automation script creates a new directory in the ~/Downloads directory named with today's date, and moves everything in the ~/Downloads directory that isn't a directory to the new directory.
- 
-
-# End of script
