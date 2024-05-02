@@ -12,7 +12,8 @@
  
 # Step 2: Design and implement the automation script
 
-```current_datetime=$(date +"%Y-%m-%d")
+```
+current_datetime=$(date +"%Y-%m-%d")
 
 mkdir ~/Downloads/$current_datetime 
 
@@ -21,7 +22,8 @@ for f in ~/Downloads/*; do
   if [ -f $f ]; then
     mv $f ~/Downloads/$current_datetime/
   fi
-done```
+done
+```
 
 # Step 3: Test the automation script
  
